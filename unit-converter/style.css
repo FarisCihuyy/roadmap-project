@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+:root {
+  --shadow: 4px 4px #000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "DM Sans", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #dcebfe;
+  color: #000;
+}
+
+.btn {
+  margin-top: 2rem;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: #5294ff;
+  border: 2px solid black;
+  box-shadow: var(--shadow);
+}
+
+.container {
+  max-width: 500px;
+  min-height: 550px;
+  padding: 1.5rem;
+  border-radius: 4px;
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: var(--shadow);
+}
+
+.headline {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.subheadline {
+  font-weight: 500;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  background-color: #dcebfe;
+}
+
+.nav button {
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.nav button.active {
+  background-color: #5294ff;
+  border: 2px solid black;
+}
+
+.form-container {
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 1rem;
+  background-color: #dcebfe;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.input label {
+  font-weight: bold;
+}
+
+.input input,
+.input select {
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+#result {
+  background-color: #dcebfe;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+.converter {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.convert-result {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  place-items: center;
+  margin-top: 1rem;
+}
+
+.convert-result p {
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}

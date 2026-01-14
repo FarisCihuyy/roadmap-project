@@ -1,0 +1,32 @@
+<form id="length-conversion-form" onsubmit="convert(event, 'length')">
+  <div class="input">
+    <label for="length-value">Enter the length</label>
+    <input
+      id="length-value"
+      type="number"
+      placeholder="Type here..."
+      required
+    />
+  </div>
+  <div class="input">
+    <label for="length-from">From</label>
+    <select id="length-from">
+      <option value="meters">Meters</option>
+      <option value="kilometers">Kilometers</option>
+      <option value="feet">Feet</option>
+      <option value="miles">Miles</option>
+    </select>
+  </div>
+
+  <div class="input">
+    <label for="length-to">To</label>
+    <select id="length-to">
+      <option value="meters">Meters</option>
+      <option value="kilometers">Kilometers</option>
+      <option value="feet">Feet</option>
+      <option value="miles">Miles</option>
+    </select>
+  </div>
+
+  <button class="btn" type="submit">Convert</button>
+</form>

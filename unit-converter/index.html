@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Unit Converter</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="headline">Unit Converter</h1>
+      <p class="subheadline">
+        Unit converter to convert between different units of measurement.
+      </p>
+      <nav class="nav">
+        <button class="active" onclick="loadHtml('./length.html')">
+          Length
+        </button>
+        <button onclick="loadHtml('./weight.html')">Weight</button>
+        <button onclick="loadHtml('./temperature.html')">Temperature</button>
+      </nav>
+
+      <div id="form-container"></div>
+      <div id="result" style="display: none">
+        <h1 class="converter">meter -> kilometer</h1>
+        <div class="convert-result">
+          <p id="from">1</p>
+          <p id="to">0.001</p>
+        </div>
+        <button class="btn" onclick="reset()">Reset</button>
+      </div>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

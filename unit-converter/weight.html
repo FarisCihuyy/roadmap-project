@@ -1,0 +1,30 @@
+<form id="weight-conversion-form" onsubmit="convert(event, 'weight')">
+  <div class="input">
+    <label for="weight-value">Enter the weight</label>
+    <input
+      type="number"
+      id="weight-value"
+      placeholder="Type here..."
+      required
+    />
+  </div>
+  <div class="input">
+    <label for="weight-from">From</label>
+    <select id="weight-from">
+      <option value="grams">Grams</option>
+      <option value="kilograms">Kilograms</option>
+      <option value="pounds">Pounds</option>
+      <option value="ounces">Ounces</option>
+    </select>
+  </div>
+  <div class="input">
+    <label for="weight-to">To</label>
+    <select id="weight-to">
+      <option value="grams">Grams</option>
+      <option value="kilograms">Kilograms</option>
+      <option value="pounds">Pounds</option>
+      <option value="ounces">Ounces</option>
+    </select>
+  </div>
+  <button class="btn" type="submit">Convert</button>
+</form>
