@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link href="./src/output.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="flex justify-between items-center px-5 py-6 lg:px-12">
+      <a href="#" class="font-bold text-lg md:text-2xl">Faris-Blog</a>
+      <div class="md:hidden">
+        <span
+          id="open-menu-btn"
+          class="material-symbols-outlined md:hidden"
+          style="font-size: 28px"
+        >
+          menu
+        </span>
+      </div>
+      <ul
+        id="navbar"
+        class="fixed top-full left-0 right-0 h-screen w-full z-10 flex flex-col items-center justify-center gap-5 bg-bgPrimary text-xl *:p-2 transition-all md:h-auto md:w-fit md:static md:flex-row md:justify-end md:text-base md:bg-transparent md:p-0"
+      >
+        <li class="font-bold text-2xl mb-14 md:hidden">
+          <a href="/">Faris-Blog</a>
+        </li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/projects.html">Projects</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/newsletter.html">Newsletter</a></li>
+        <li>
+          <button
+            class="w-12 h-6 rounded-full bg-white flex items-center transition duration-300 focus:outline-none shadow"
+            onclick="toggleTheme()"
+          >
+            <div
+              id="switch-toggle"
+              class="size-8 relative rounded-full transition duration-500 transform bg-yellow-500 -translate-x-2 p-1 text-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                />
+              </svg>
+            </div>
+          </button>
+        </li>
+
+        <li id="close-menu-btn" class="absolute bottom-4 md:hidden">
+          <span class="material-symbols-outlined"> close </span>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="lg:px-12">
+      <section
+        class="w-full [container-type:inline-size] flex justify-center items-center border-y border-primary/50 overflow-hidden"
+      >
+        <h1
+          class="text-[18cqw] font-bold leading-none select-none uppercase px-4 py-8"
+        >
+          the blog
+        </h1>
+      </section>
+      <section class="p-8">
+        <h2 class="font-semibold text-2xl mb-8">Recent blog posts</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <article
+            class="group flex flex-col gap-6 md:first:col-span-2 md:last:col-span-2 lg:first:row-span-2 lg:first:col-span-1 lg:not-first:flex-row lg:last:col-span-2 overflow-hidden"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600"
+              alt="UX"
+              class="w-full h-56 object-cover lg:group-[&:nth-child(2)]:h-auto lg:group-[&:nth-child(3)]:h-auto lg:w-48 lg:group-last:w-[calc(50%-12px)] lg:group-first:w-full"
+            />
+            <div class="flex-1 space-y-4">
+              <div class="space-y-2">
+                <p class="text-accent text-xs font-medium">
+                  Olivia Rhye • 1 Jan 2023
+                </p>
+                <div class="flex justify-between items-center">
+                  <h2 class="font-semibold text-2xl line-clamp-2">
+                    UX review presentations
+                  </h2>
+                  <span
+                    class="material-symbols-outlined text-gray-700"
+                    style="font-size: 24px"
+                    >arrow_outward</span
+                  >
+                </div>
+                <p class="opacity-50 line-clamp-3">
+                  How do you create compelling presentations that wow your
+                  colleagues and impress your managers?
+                </p>
+              </div>
+              <ul class="flex gap-2 text-sm flex-wrap">
+                <li class="px-3 py-1 rounded-full bg-pink-50 text-pink-700">
+                  Design
+                </li>
+                <li class="px-3 py-1 rounded-full bg-purple-50 text-purple-700">
+                  Research
+                </li>
+                <li class="px-3 py-1 rounded-full bg-blue-50 text-blue-700">
+                  Presentation
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article
+            class="group flex flex-col gap-6 md:first:col-span-2 md:last:col-span-2 lg:first:row-span-2 lg:first:col-span-1 lg:not-first:flex-row lg:last:col-span-2 overflow-hidden"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600"
+              alt="UX"
+              class="w-full h-56 object-cover lg:group-[&:nth-child(2)]:h-auto lg:group-[&:nth-child(3)]:h-auto lg:w-48 lg:group-last:w-[calc(50%-12px)] lg:group-first:w-full"
+            />
+            <div class="flex-1 space-y-4">
+              <div class="space-y-2">
+                <p class="text-accent text-xs font-medium">
+                  Olivia Rhye • 1 Jan 2023
+                </p>
+                <div class="flex justify-between items-center">
+                  <h2 class="font-semibold text-2xl line-clamp-2">
+                    UX review presentations
+                  </h2>
+                  <span
+                    class="material-symbols-outlined text-gray-700"
+                    style="font-size: 24px"
+                    >arrow_outward</span
+                  >
+                </div>
+                <p class="opacity-50 line-clamp-3">
+                  How do you create compelling presentations that wow your
+                  colleagues and impress your managers?
+                </p>
+              </div>
+              <ul class="flex gap-2 text-sm flex-wrap">
+                <li class="px-3 py-1 rounded-full bg-pink-50 text-pink-700">
+                  Design
+                </li>
+                <li class="px-3 py-1 rounded-full bg-purple-50 text-purple-700">
+                  Research
+                </li>
+                <li class="px-3 py-1 rounded-full bg-blue-50 text-blue-700">
+                  Presentation
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article
+            class="group flex flex-col gap-6 md:first:col-span-2 md:last:col-span-2 lg:first:row-span-2 lg:first:col-span-1 lg:not-first:flex-row lg:last:col-span-2 overflow-hidden"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600"
+              alt="UX"
+              class="w-full h-56 object-cover lg:group-[&:nth-child(2)]:h-auto lg:group-[&:nth-child(3)]:h-auto lg:w-48 lg:group-last:w-[calc(50%-12px)] lg:group-first:w-full"
+            />
+            <div class="flex-1 space-y-4">
+              <div class="space-y-2">
+                <p class="text-accent text-xs font-medium">
+                  Olivia Rhye • 1 Jan 2023
+                </p>
+                <div class="flex justify-between items-center">
+                  <h2 class="font-semibold text-2xl line-clamp-2">
+                    UX review presentations
+                  </h2>
+                  <span
+                    class="material-symbols-outlined text-gray-700"
+                    style="font-size: 24px"
+                    >arrow_outward</span
+                  >
+                </div>
+                <p class="opacity-50 line-clamp-3">
+                  How do you create compelling presentations that wow your
+                  colleagues and impress your managers?
+                </p>
+              </div>
+              <ul class="flex gap-2 text-sm flex-wrap">
+                <li class="px-3 py-1 rounded-full bg-pink-50 text-pink-700">
+                  Design
+                </li>
+                <li class="px-3 py-1 rounded-full bg-purple-50 text-purple-700">
+                  Research
+                </li>
+                <li class="px-3 py-1 rounded-full bg-blue-50 text-blue-700">
+                  Presentation
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article
+            class="group flex flex-col gap-6 md:first:col-span-2 md:last:col-span-2 lg:first:row-span-2 lg:first:col-span-1 lg:not-first:flex-row lg:last:col-span-2 overflow-hidden"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600"
+              alt="UX"
+              class="w-full h-56 object-cover lg:group-[&:nth-child(2)]:h-auto lg:group-[&:nth-child(3)]:h-auto lg:w-48 lg:group-last:w-[calc(50%-12px)] lg:group-first:w-full"
+            />
+            <div class="flex-1 space-y-4">
+              <div class="space-y-2">
+                <p class="text-accent text-xs font-medium">
+                  Olivia Rhye • 1 Jan 2023
+                </p>
+                <div class="flex justify-between items-center">
+                  <h2 class="font-semibold text-2xl line-clamp-2">
+                    UX review presentations
+                  </h2>
+                  <span
+                    class="material-symbols-outlined text-gray-700"
+                    style="font-size: 24px"
+                    >arrow_outward</span
+                  >
+                </div>
+                <p class="opacity-50 line-clamp-3">
+                  How do you create compelling presentations that wow your
+                  colleagues and impress your managers?
+                </p>
+              </div>
+              <ul class="flex gap-2 text-sm flex-wrap">
+                <li class="px-3 py-1 rounded-full bg-pink-50 text-pink-700">
+                  Design
+                </li>
+                <li class="px-3 py-1 rounded-full bg-purple-50 text-purple-700">
+                  Research
+                </li>
+                <li class="px-3 py-1 rounded-full bg-blue-50 text-blue-700">
+                  Presentation
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="p-8">
+        <h2 class="font-semibold text-2xl mb-8">All blog posts</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <article class="flex flex-col gap-8">
+            <img
+              src="assets/placeholder.png"
+              alt="UX"
+              class="h-56 object-cover object-center"
+            />
+            <div class="space-y-6">
+              <div class="space-y-3">
+                <p class="text-accent text-xs font-medium">
+                  Sunday, 10th May 2023
+                </p>
+                <div class="flex justify-between items-center">
+                  <h2 class="font-semibol text-2xl line-clamp-1">
+                    UX Preview presentations
+                  </h2>
+                  <div>
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 24px; opacity: 0.7"
+                    >
+                      arrow_outward
+                    </span>
+                  </div>
+                </div>
+                <p class="opacity-50 line-clamp-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Exercitationem ut pariatur ratione?
+                </p>
+              </div>
+              <ul class="flex gap-2 text-sm">
+                <li class="px-4 py-1 rounded-full bg-pink-50 text-pink-700">
+                  Design
+                </li>
+                <li class="px-4 py-1 rounded-full bg-purple-50 text-purple-700">
+                  Research
+                </li>
+                <li class="px-4 py-1 rounded-full bg-blue-50 text-blue-700">
+                  Presentation
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="flex flex-col gap-8">
+            <img
+              src="assets/placeholder.png"
+              alt="UX"
+              class="h-56 object-cover object-center"
+            />
+            <div class="space-y-6">
+              <div class="space-y-3">
+                <p class="text-accent text-xs font-medium">
+                  Sunday, 10th May 2023
+                </p>
+                <div class="flex justify-between items-center">
+                  <h2 class="font-semibol text-2xl line-clamp-1">
+                    UX Preview presentations
+                  </h2>
+                  <div>
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 24px; opacity: 0.7"
+                    >
+                      arrow_outward
+                    </span>
+                  </div>
+                </div>
+                <p class="opacity-50 line-clamp-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Exercitationem ut pariatur ratione?
+                </p>
+              </div>
+              <ul class="flex gap-2 text-sm">
+                <li class="px-4 py-1 rounded-full bg-pink-50 text-pink-700">
+                  Design
+                </li>
+                <li class="px-4 py-1 rounded-full bg-purple-50 text-purple-700">
+                  Research
+                </li>
+                <li class="px-4 py-1 rounded-full bg-blue-50 text-blue-700">
+                  Presentation
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="flex flex-col gap-8">
+            <img
+              src="assets/placeholder.png"
+              alt="UX"
+              class="h-56 object-cover object-center"
+            />
+            <div class="space-y-6">
+              <div class="space-y-3">
+                <p class="text-accent text-xs font-medium">
+                  Sunday, 10th May 2023
+                </p>
+                <div class="flex justify-between items-center">
+                  <h2 class="font-semibol text-2xl line-clamp-1">
+                    UX Preview presentations
+                  </h2>
+                  <div>
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-size: 24px; opacity: 0.7"
+                    >
+                      arrow_outward
+                    </span>
+                  </div>
+                </div>
+                <p class="opacity-50 line-clamp-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Exercitationem ut pariatur ratione?
+                </p>
+              </div>
+              <ul class="flex gap-2 text-sm">
+                <li class="px-4 py-1 rounded-full bg-pink-50 text-pink-700">
+                  Design
+                </li>
+                <li class="px-4 py-1 rounded-full bg-purple-50 text-purple-700">
+                  Research
+                </li>
+                <li class="px-4 py-1 rounded-full bg-blue-50 text-blue-700">
+                  Presentation
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section
+        class="flex justify-between items-center border-t border-primary/50 p-8 md:px-0"
+      >
+        <button>
+          <span class="material-symbols-outlined"> arrow_back </span>
+        </button>
+
+        <div class="flex gap-0.5">
+          <button
+            class="size-10 bg-primary text-bgPrimary font-bold rounded-md"
+          >
+            1
+          </button>
+          <button class="size-10 font-bold rounded-md">2</button>
+          <button class="size-10 font-bold rounded-md">3</button>
+          <button class="size-10 font-bold rounded-md">4</button>
+          <button class="size-10 font-bold rounded-md">5</button>
+        </div>
+
+        <button>
+          <span class="material-symbols-outlined"> arrow_forward </span>
+        </button>
+      </section>
+    </main>
+
+    <footer class="p-4 text-xs text-center opacity-50">
+      &copy; FarisCihuyy 2026
+    </footer>
+
+    <script src="./src/events.js"></script>
+  </body>
+</html>

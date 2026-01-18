@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1a1a1a;
+  --color-bgPrimary: #fff;
+  --color-secondary: #667085;
+  --color-accent: #6941c6;
+
+  --font-Inter: "Inter";
+}
+
+.dark {
+  --color-primary: #fff;
+  --color-bgPrimary: #090d1f;
+}
+
+body {
+  @apply font-Inter text-primary bg-bgPrimary transition-colors duration-500;
+}
+
+.material-symbols-outlined {
+  -webkit-user-select: none;
+  user-select: none;
+  font-size: 32px;
+}
+
+.active-page {
+  font-weight: bold;
+  background-color: var(--color-primary);
+  color: var(--color-bgPrimary);
+}
